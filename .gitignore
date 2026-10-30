@@ -1,0 +1,18 @@
+# Environnements et caches Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Fichiers locaux et mesures de session
+.env
+.env.*
+*.log
+artifacts/session*.csv
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

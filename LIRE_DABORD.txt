@@ -1,0 +1,42 @@
+﻿SENTINEL LAB - A LIRE AVANT DE COMMENCER
+======================================
+
+Ce dossier contient le prototype, le reseau de neurones deja entraine,
+le guide PDF de demonstration et une capture de l'interface.
+
+Configuration prevue : Windows 10/11, Python 3.12 en 64 bits.
+Internet est necessaire pour installer les bibliotheques la premiere fois.
+Python et les bibliotheques ne sont pas inclus dans ce petit ZIP.
+
+1. Enregistrer le fichier ZIP sur ton ordinateur.
+2. Clic droit sur le ZIP > Extraire tout. Ne pas lancer depuis l'interieur du ZIP.
+3. Si necessaire, installer Python 3.12 (64 bits) depuis python.org.
+   Activer l'option d'ajout de Python au PATH pendant l'installation.
+4. Ouvrir le dossier Sentinel-Lab extrait et double-cliquer sur DEMARRER.bat.
+5. Au premier lancement, laisser l'installation se terminer. PyTorch est une
+   bibliotheque volumineuse : prevoir du temps et de l'espace disque.
+6. Le navigateur ouvre http://127.0.0.1:8765 quand le serveur est pret.
+7. Sur ton propre PC, cliquer sur Calibrer le modele et attendre environ
+   deux minutes. Cette etape adapte la reference aux mesures de ta machine.
+8. Verifier le trafic normal, puis cliquer sur Lancer la surcharge (25 s).
+9. Lire Guide_demonstration_Sentinel_Lab.pdf pour les explications et le script oral.
+
+Garder la fenetre du lanceur ouverte pendant la demonstration.
+Le bouton Arreter le trafic coupe la generation de requetes.
+Ctrl+C dans le lanceur ferme le serveur.
+
+Si une installation a ete interrompue, relancer DEMARRER.bat avec Internet.
+Si une erreur persiste, copier son message exact pour demander de l'aide.
+Sur Mac ou Linux, ce lanceur Windows ne convient pas : demander les instructions adaptees.
+
+Important : le lien 127.0.0.1 est LOCAL. Il fonctionne sur ton ordinateur
+seulement apres y avoir demarre le projet. Ce n'est pas un site Internet partage.
+
+Le reseau de neurones est un autoencodeur PyTorch (356 parametres).
+La demonstration simule un DoS HTTP controle sur une API locale uniquement.
+Le modele ne recoit pas l'information indiquant que le scenario est lance.
+
+Les resultats de verification inclus correspondent au PC de preparation.
+Ils ne garantissent pas les memes valeurs sur une autre machine.
+Faire une repetition complete avant la presentation, apres recalibration.
+Le guide technique README.md explique le code et les limites du prototype.

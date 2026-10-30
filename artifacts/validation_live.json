@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-10-30T18:46:21.765810+00:00",
+  "model_trained_at": "2026-10-30T18:43:12.652486+00:00",
+  "scope": "Test de fonctionnement local, sans valeur de benchmark scientifique.",
+  "normal": {
+    "windows": 14,
+    "alerts": 0,
+    "max_rps": 19.0,
+    "max_error_rate": 0.0,
+    "max_score_ratio": 0.05957634747028351
+  },
+  "legitimate": {
+    "windows": 22,
+    "alerts": 0,
+    "max_rps": 26.4,
+    "max_error_rate": 0.0,
+    "max_score_ratio": 0.08695750435193379
+  },
+  "attack": {
+    "windows": 22,
+    "alerts": 22,
+    "max_rps": 110.34,
+    "max_error_rate": 0.6162,
+    "max_score_ratio": 33.888867696126304
+  },
+  "recovery": {
+    "windows": 12,
+    "alerts": 0,
+    "max_rps": 20.0,
+    "max_error_rate": 0.0,
+    "max_score_ratio": 0.09206550319989522
+  },
+  "detection_seconds": 1.5,
+  "checks": {
+    "local_host_guard": true,
+    "control_token_guard": true,
+    "csv_export": true,
+    "actual_service_degradation": true,
+    "neural_alert_during_attack": true,
+    "normal_without_confirmed_alert": true,
+    "legitimate_without_confirmed_alert": true,
+    "recovery_without_confirmed_alert": true
+  }
+}
